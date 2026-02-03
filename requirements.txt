@@ -1,0 +1,36 @@
+# SSCI旅游学术趋势分析系统 - 依赖包
+# =====================================
+# 安装方式: pip install -r requirements.txt
+
+# 核心依赖 (必需)
+requests>=2.28.0          # API请求
+
+# Web UI界面 (推荐)
+streamlit>=1.28.0         # Web可视化界面
+
+# 数据处理 (推荐)
+pandas>=1.5.0             # 数据框处理
+openpyxl>=3.0.0           # Excel文件支持
+
+# 可视化 (推荐)
+matplotlib>=3.6.0         # 基础图表
+networkx>=2.8.0           # 网络图分析
+
+# AI功能 (可选 - 如需Claude辅助分析)
+anthropic>=0.18.0         # Claude API
+
+# 注意事项:
+# ---------
+# 1. 本系统设计为轻量级，避免了NLTK/spaCy等重型NLP库
+# 2. 所有核心功能仅需 requests 即可运行
+# 3. matplotlib和networkx用于生成可视化图表
+# 4. anthropic用于AI辅助选题功能（需配置API密钥）
+#
+# 最小安装 (仅核心功能):
+#   pip install requests
+#
+# 推荐安装 (完整功能):
+#   pip install requests pandas openpyxl matplotlib networkx
+#
+# 完整安装 (包含AI):
+#   pip install requests pandas openpyxl matplotlib networkx anthropic
